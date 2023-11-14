@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+ */
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -25,3 +25,4 @@ Route::get('register', function () {
 Route::get('/', [App\Http\Controllers\Dashboard\HomeController::class, 'index']);
 Route::get('user/create', [App\Http\Controllers\Dashboard\UserController::class, 'create']);
 Route::get('user/account-detail', [App\Http\Controllers\Dashboard\UserController::class, 'index']);
+Route::get('userlist', [App\Http\Controllers\UserlistController::class, 'index']);

@@ -7,99 +7,204 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>Register Page</title>
-    {{-- <link rel="apple-touch-icon" href="{{asset('assets/images/ico/apple-icon-120.png">
+    {{-- <link rel="apple-touch-icon" href="{{asset('assets/images/ico/apple-icon-120.png')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/ico/favicon.ico"> --}}
-
-    <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/css/vendors.min.css')}}">
+   <!-- BEGIN: Vendor CSS-->
     <!-- END: Vendor CSS-->
-
-    <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap-extended.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/colors.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/components.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/themes/dark-layout.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/themes/semi-dark-layout.css')}}">
-
-    <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/core/menu/menu-types/vertical-menu.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/core/colors/palette-gradient.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/pages/authentication.css')}}">
-    <!-- END: Page CSS-->
-
-    <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
     <!-- END: Custom CSS-->
+<style>
+    body{
+        background: #26293c;
+    }
+.card.form-card {
+    width: 300px;
+    background: #303348;
+    padding: 40px;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.login-tittle {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.login-tittle  img{
+    width:30px;
+}
+.login-para{
+    color:white;
+}
+.form-card .form-label-group label{
+    color:white;
+}
+.form-card .form-label-group input{
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-style: normal;
+    line-height: normal;
+    padding: 10px 20px;
+    border: 1px solid #929292;
+    width: 88%;
+    border-radius:10px;
+}
+.chckbox-cont {
+    color: #8E8E8E;
+    font-family: "Raleway-regular";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    gap: 10px;
+}
+.submit-form {
+    display: flex;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    font-family: "Raleway-regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: #7867ed;
+    border: none;
+    outline: none;
+}
+.create-acnt{
+    color:white;
+    text-align:center;
+    margin-top:20px;
+}
+.create-acnt a{
+    color:#7867ed;
+    text-decoration:none;
+}
+.form-card-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 
+}
+.wraped-div{
+    position: relative;
+    z-index: 9;
+}
+.before-div {
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    background: #2d2e4a;
+    border-radius: 10px;
+    top: -40px;
+    left: -40px;
+    border-radius:5px;
+    z-index: -1;
+}
+.after-div {
+    position: absolute;
+    border: 1px dotted #2d2e4a;
+    border-radius: 5px;
+    bottom: -50px;
+    right: -50px;
+    z-index: -1;
+}
+.after-inner{
+    width:100px;
+    height:100px;
+    margin:20px;
+    background:#2d2e4a;
+    border-radius:5px;
+}
+</style>
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  menu-collapsed blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
+<body>
     <!-- BEGIN: Content-->
-    <div class="app-content content">
-        <div class="content-overlay"></div>
-        <div class="header-navbar-shadow"></div>
-        <div class="content-wrapper">
-            <div class="content-header row">
-            </div>
-            <div class="content-body">
-                <section class="row flexbox-container">
-                    <div class="col-xl-8 col-10 d-flex justify-content-center">
-                        <div class="card bg-authentication rounded-0 mb-0">
-                            <div class="row m-0">
-                                {{-- <div class="col-lg-6 d-lg-block d-none text-center align-self-center pl-0 pr-3 py-0">
-                                    <img src="{{asset('assets/images/pages/register.jpg')}}" alt="branding logo">
+    <div class="">
+        <div class="">
+
+            <div class="">
+                <section class="">
+                    <div class="">
+                        <div class="">
+                            <div class="">
+                                {{-- <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-1 py-0">
+                                    <img src="{{asset('assets/images/pages/login.png')}}" alt="branding logo">
                                 </div> --}}
-                                <div class="col-md-12 col-12 p-0">
-                                    <div class="card rounded-0 mb-0 p-2">
-                                        <div class="card-header pt-50 pb-1">
+                                <div class="form-card-wraper">
+                                    <div class="wraped-div">
+                                    <div class="before-div"></div>
+                                    <div class="card form-card">
+                                        <div class="card-header">
                                             <div class="card-title">
-                                                <h4 class="mb-0">Create Account</h4>
+                                                <h4 class="login-tittle"><img src="{{asset('app-assets/images/logo/logo-success.png')}}" alt="">Register</h4>
                                             </div>
                                         </div>
-                                        <p class="px-2">Fill the below form to create a new account.</p>
-                                        <div class="card-content">
-                                            <div class="card-body pt-0">
-                                                <form action="index.html">
+                                        <p class="login-para">Welcome back <br>
+                                         Please login to your account.</p>
+                                        <div class="">
+                                            <div class="">
+                                                <form action="">
                                                     <div class="form-label-group">
-                                                        <input type="text" id="inputName" class="form-control" placeholder="Name" required>
-                                                        <label for="inputName">Name</label>
-                                                    </div>
-                                                    <div class="form-label-group">
-                                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
-                                                        <label for="inputEmail">Email</label>
-                                                    </div>
-                                                    <div class="form-label-group">
-                                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                                        <label for="inputPassword">Password</label>
-                                                    </div>
-                                                    <div class="form-label-group">
-                                                        <input type="password" id="inputConfPassword" class="form-control" placeholder="Confirm Password" required>
-                                                        <label for="inputConfPassword">Confirm Password</label>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-12">
-                                                            <fieldset class="checkbox">
-                                                                <div class="vs-checkbox-con vs-checkbox-primary">
-                                                                    <input type="checkbox" checked>
-                                                                    <span class="vs-checkbox">
-                                                                        <span class="vs-checkbox--check">
-                                                                            <i class="vs-icon feather icon-check"></i>
-                                                                        </span>
-                                                                    </span>
-                                                                    <span class=""> I accept the terms & conditions.</span>
-                                                                </div>
-                                                            </fieldset>
+                                                    <label for="user-name">Username</label>
+                                                        <input type="text" class="form-control" id="user-name" required>
+                                                        <div class="form-control-position">
                                                         </div>
+
                                                     </div>
-                                                    <a href="{{url('login')}}" class="btn btn-outline-primary float-left btn-inline mb-50">Login</a>
-                                                    <button type="submit" class="btn btn-primary float-right btn-inline mb-50">Register</a>
+                                                    <div class="form-label-group">
+                                                    <label for="user-name">Email</label>
+                                                        <input type="email" class="form-control" id="user-name" required>
+                                                        <div class="form-control-position">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-label-group">
+                                                    <label for="user-password">Password</label>
+                                                        <input type="password" class="form-control" id="user-password" required>
+                                                        <div class="form-control-position">
+                                                            <i class="feather icon-lock"></i>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <button type="submit" class="submit-form">Register</button>
+                                                    <div class='create-acnt'>
+                                                        Already have account
+                                                    <a href="{{url('register')}}" class="btn btn-outline-primary float-left btn-inline">Login</a>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="after-div">
+                                        <div class="after-inner">
+
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
